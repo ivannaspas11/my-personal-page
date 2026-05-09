@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Замкова вежа - 3D Проєкт</title>
+    <!-- Підключаємо той самий файл стилів! -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Скрипт для 3D моделі -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+  </head>
+  <body data-theme="light">
+    <!-- Рядок 1: Назва та перемикач (ідентично до головної сторінки) -->
+    <div class="header-row">
+      <div class="header-spacer"></div>
+      <h1 class="main-title">Мій 3D Проєкт</h1>
+      <div class="theme-switcher-wrapper">
+        <select
+          id="theme-select"
+          class="soft-select"
+          onchange="changeTheme(this.value)"
+        >
+          <option value="light">Світла тема ☀️</option>
+          <option value="dark">Темна тема 🌙</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Кнопка повернення на головну -->
+    <div style="text-align: center; margin-top: 30px">
+      <!-- Використовуємо стиль кнопки btn-3d, але робимо її трохи меншою -->
+      <a
+        href="index.html"
+        class="btn-3d"
+        style="font-size: 1rem; padding: 10px 20px"
+        >⬅ Повернутися на головну</a
+      >
+    </div>
+
+    <hr />
+
+    <!-- Блок з 3D-моделлю. Використовуємо клас slideshow-container для красивого фону -->
+    <div
+      class="slideshow-container"
+      style="text-align: center; margin-top: 40px; padding-bottom: 40px"
+    >
+      <!-- Назва вежі -->
+      <div
+        class="gray-title"
+        style="
+          font-size: 1.8rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+          padding: 15px 30px;
+        "
+      >
+        "Замкова вежа"
+      </div>
+
+      <p style="font-size: 1.2rem; margin-bottom: 25px; font-style: italic">
+        Ця модель була повністю розроблена в середовищі Blender
+      </p>
+
+      <!-- Контейнер для 3D-моделі -->
+      <div
+        style="
+          width: 100%;
+          height: 500px;
+          margin: 0 auto;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+          background-color: #ffffff;
+        "
+      >
+        <model-viewer
+          src="project3dweb.glb"
+          alt="Замкова вежа"
+          auto-rotate
+          camera-controls
+          style="width: 100%; height: 100%; outline: none"
+        >
+        </model-viewer>
+      </div>
+      <p style="margin-top: 15px; font-weight: bold">
+        (Цю модель можна крутити мишкою)
+      </p>
+    </div>
+
+    <!-- Скрипт для роботи перемикача тем -->
+    <script>
+      function changeTheme(val) {
+        document.body.setAttribute("data-theme", val);
+      }
+    </script>
+  </body>
+</html>

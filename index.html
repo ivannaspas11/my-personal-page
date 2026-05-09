@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя особиста сторінка</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-theme="light">
+    <!-- Рядок 1: Назва та перемикач -->
+    <div class="header-row">
+      <div class="header-spacer"></div>
+      <h1 class="main-title">Моя особиста сторінка</h1>
+      <div class="theme-switcher-wrapper">
+        <select
+          id="theme-select"
+          class="soft-select"
+          onchange="changeTheme(this.value)"
+        >
+          <option value="light">Світла тема ☀️</option>
+          <option value="dark">Темна тема 🌙</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Рядок 2: Власник -->
+    <div class="owner-subtitle">
+      Власник і творець 😊 - Іванна. Моя електронна пошта:
+      ivannaspas11@gmail.com
+    </div>
+
+    <hr />
+
+    <!-- Таблиця -->
+    <section class="table-section">
+      <h2>Результати попереднього семестру</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Дисципліна</th>
+              <th>Викладач</th>
+              <th>Оцінка</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Математичні обробки зображень</td>
+              <td>Главчева Ю.М.</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td>Організація баз даних</td>
+              <td>Мартиненко Г.Ю.</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Програмування GUI</td>
+              <td>Дашкевич А.О.</td>
+              <td>98</td>
+            </tr>
+            <tr>
+              <td>Технології програмування</td>
+              <td>Шаповалова М.І.</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Іноземна мова</td>
+              <td>Рубцова В.В.</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Правознавство</td>
+              <td>Кузьменко О.В.</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Фільми -->
+    <section class="films-section">
+      <h2>Мої улюблені фільми</h2>
+      <div class="films-container">
+        <div class="film-item">
+          <a
+            href="https://uafix.net/films/bezslavni-virodki/"
+            target="_blank"
+            class="film-link"
+            >Безславні виродки</a
+          >
+          <img src="bezslavnivirodky.jpg" alt="Безславні виродки" />
+        </div>
+        <div class="film-item">
+          <a
+            href="https://uafix.net/films/lehenda/"
+            target="_blank"
+            class="film-link"
+            >Легенда</a
+          >
+          <img src="legend.jpeg" alt="Легенда" />
+        </div>
+        <div class="film-item">
+          <a
+            href="https://uafix.net/films/venom-1/"
+            target="_blank"
+            class="film-link"
+            >Веном 1</a
+          >
+          <img src="venom.jpg" alt="Веном 1" />
+        </div>
+        <div class="film-item">
+          <a
+            href="https://uafix.net/films/mumia/"
+            target="_blank"
+            class="film-link"
+            >Мумія</a
+          >
+          <img src="mymia.jpg" alt="Мумія" />
+        </div>
+        <div class="film-item">
+          <a
+            href="https://uafix.net/films/avatar-1/"
+            target="_blank"
+            class="film-link"
+            >Аватар 1</a
+          >
+          <img src="avatar.jpeg" alt="Аватар 1" />
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- 3 Слова (Картки) -->
+    <section class="three-words-section">
+      <h2 class="centered-title">3 слова, якими можна мене описати</h2>
+      <div class="cards-row">
+        <div class="flip-card card-green">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">Людина-настрою 😁</div>
+            <div class="flip-card-back">Людина-настрою 😁</div>
+          </div>
+        </div>
+        <div class="flip-card card-yellow">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">Наполеглива 💪</div>
+            <div class="flip-card-back">Наполеглива 💪</div>
+          </div>
+        </div>
+        <div class="flip-card card-blue">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">Дзеркальна 🤜🤛</div>
+            <div class="flip-card-back">Дзеркальна 🤜🤛</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Мій настрій -->
+    <section class="mood-section">
+      <h2 class="bold-centered-title">
+        3 картинки, які показують мене у 3-х різних настроях
+      </h2>
+      <div class="mood-row">
+        <div class="mood-box box-happy">
+          <img src="smailebibizyan.jpg" alt="Щаслива" />
+          <div class="mood-caption">Щаслива</div>
+        </div>
+        <div class="mood-box box-sad">
+          <img src="sadmalya.jpg" alt="Сумна" />
+          <div class="mood-caption">Сумна</div>
+        </div>
+        <div class="mood-box box-now">
+          <img src="crazybibizyan.jpg" alt="Зараз" />
+          <div class="mood-caption">Зараз</div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Цитати -->
+    <section class="quotes-section">
+      <h2 class="gray-title">Улюблена цитата</h2>
+      <div class="quote-row">
+        Якщо смішна, то ця: «А сьогодні в завтрашній день не всі можуть
+        дивитися. Точніше, дивитися можуть не тільки всі, мало хто може це
+        робити.» — Віталій Кличко
+      </div>
+      <div class="quote-row">
+        Якщо сурйозна і життєва, то — «"Все минає, і це мине".» — Царь Соломон
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Історія Слобожанщини -->
+    <section class="history-section">
+      <h2 class="orange-translucent-title">
+        Те, що Харків - столиця світу, ні для кого не секрет, проте трохи
+        цікавих фактів про столицю Слобожанщини не завадить 😃
+      </h2>
+      <div class="history-peach-container">
+        <!-- Перший рядок (3 факти) -->
+        <div class="history-grid-row">
+          <div class="history-fact">
+            <h3>📜 «Харківці», а не «харків'яни»</h3>
+            <p>
+              З XVIII і до середини XX століття жителів називали «харківцями»
+              (назва «харків’яни» з’явилася лише 75 років тому). На моїй рідній
+              Сумщині людей, які переїхали туди, і зараз так називають — мабуть,
+              заведено ще з тих часів.
+            </p>
+          </div>
+          <div class="history-fact">
+            <h3>🌍 На 50-й паралелі</h3>
+            <p>
+              Якщо піти в сторону географії, то Харків — найбільше у світі
+              місто, розташоване на 50-й паралелі (широті).
+            </p>
+          </div>
+          <div class="history-fact">
+            <h3>🐴 Кінний трамвай</h3>
+            <p>
+              Перший трамвай був кінним! Вартість поїздки складала п'ять
+              копійок. Лише за перший рік роботи він перевіз понад два мільйони
+              пасажирів.
+            </p>
+          </div>
+        </div>
+        <!-- Другий рядок (3 факти) -->
+        <div class="history-grid-row">
+          <div class="history-fact">
+            <h3>🦁 Найстаріший зоопарк</h3>
+            <p>
+              Невід'ємна частинка Ха — Харківський зоопарк. Він є першим в
+              Україні та одним з двадцяти найстаріших у світі.
+            </p>
+          </div>
+          <div class="history-fact">
+            <h3>🌌 У космосі побував 21 харків’янин</h3>
+            <p>
+              Харківські заклади вищої освіти підготували найбільше у світі
+              космонавтів, які побували на орбіті.
+            </p>
+          </div>
+          <div class="history-fact">
+            <h3>🎸 Рекордний концерт</h3>
+            <p>
+              Наостанок, про мою улюблену музику: найбільшим безкоштовним
+              концертом в історії України вважається виступ Queen + Paul Rodgers
+              на площі Свободи 12 вересня 2008 року.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Мапи -->
+    <section class="maps-section">
+      <h2 class="bold-centered-title">Google Maps моїх улюблених місць</h2>
+      <div class="maps-container">
+        <div class="map-wrapper">
+          <iframe
+            class="responsive-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d326462.6176378129!2d36.015033742491185!3d50.00570912440369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2sKharkiv%2C%20Kharkiv%20Oblast%2C%20Ukraine%2C%2061000!5e0!3m2!1sen!2sus!4v1713531234567!5m2!1sen!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-caption pink-bg">Проживаю тут ☝️💓</div>
+        </div>
+        <div class="map-wrapper">
+          <iframe
+            class="responsive-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20067.09751425748!2d35.3702055!3d50.4055757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4128776971ae6d53%3A0x715a0ae4f755f408!2z0K_QvNC90LUsINCh0YPQvNGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA0MjgwNw!5e0!3m2!1suk!2sua!4v1715264850000!5m2!1suk!2sua"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-caption blackberry-bg">Народилась тут☝️🥰</div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Слайдер / Спогади -->
+    <section class="memories-section">
+      <h2 class="turquoise-title">Мої улюблені місця та спогади</h2>
+      <div class="slideshow-container translucent-blue-bg">
+        <div class="slide fade">
+          <img
+            src="parktsentralny.jpg"
+            alt="Центральний Парк"
+            style="width: 100%"
+          />
+          <div class="slide-caption">
+            Маленька я в "Центральному Парку" найкращого міста 🎡
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img
+            src="parkmtsentralnyi.jpg"
+            alt="Центральний Парк в дитинстві"
+            style="width: 100%"
+          />
+          <div class="slide-caption">
+            Ще менша я, а парк той самий - "Центральний" 👧🎢
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img
+            src="feldmanmini.jpg"
+            alt="Еко парк Фельдман"
+            style="width: 100%"
+          />
+          <div class="slide-caption">Любимий "Еко парк Фельдман" ❤️</div>
+        </div>
+
+        <div class="slide fade">
+          <img
+            src="kaskadmini.jpg"
+            alt="Каскад у парку Шевченка"
+            style="width: 100%"
+          />
+          <div class="slide-caption">
+            Знаменитий каскад у "парку ім. Шевченка" задовго до реконструкції ⛲
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img
+            src="onovlenanaberezna.png"
+            alt="Оновлена Лопанська набережна"
+            style="width: 100%"
+          />
+          <div class="slide-caption">Оновлена "Лопанська набережна" 🫶</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="gradysnik.jpg" alt="Градусник" style="width: 100%" />
+          <div class="slide-caption">
+            Знаменитий "Градусник" - місце зустрічі багатьох харків'ян 🌡️🕑
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img
+            src="oglyadoviymaidanchik.jpg"
+            alt="Оглядовий майданчик"
+            style="width: 100%"
+          />
+          <div class="slide-caption">
+            Просто красиве фото жовтневого Ха з оглядового майданчика 😍
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="strilka.jpg" alt="Сквер Стрілка" style="width: 100%" />
+          <div class="slide-caption">Сквер "Стрілка" 🥰</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="vorskla.jpg" alt="Річка Ворскла" style="width: 100%" />
+          <div class="slide-caption">
+            Улюблена річка Ворскла на прифронтовій Сумщині ❤️‍🩹
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="selo.jpg" alt="Рідне село" style="width: 100%" />
+          <div class="slide-caption">Рідне, ще живе село - 2024 рік 🥹🏡</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="ridnastreet.jpg" alt="Рідна вулиця" style="width: 100%" />
+          <div class="slide-caption">
+            Вечірня вулиця, на якій я виросла 🌳🏠
+          </div>
+        </div>
+
+        <div class="slide fade">
+          <img src="selo2.jpg" alt="Подвір'я" style="width: 100%" />
+          <div class="slide-caption">Літні щемливі спогади 🌸✨</div>
+        </div>
+
+        <!-- Кнопки "Вперед/Назад" -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Кнопка 3D -->
+    <div class="blue-button-container">
+      <a href="project.html" class="btn-3d"
+        >🚀 Переглянути улюблений 3D-проєкт</a
+      >
+    </div>
+
+    <!-- Скрипти -->
+    <script>
+      function changeTheme(val) {
+        document.body.setAttribute("data-theme", val);
+      }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (slides.length === 0) return; // Захист, якщо фото ще не вставлені
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

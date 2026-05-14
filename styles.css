@@ -588,7 +588,7 @@ body[data-theme="dark"] .mood-caption {
 
 /* адаптивність для моб.пристроїв */
 @media screen and (max-width: 768px) {
-  /*  Шапка та 3D-сторінки (щоб заголовок і перемикач не злипалися) */
+  /* Шапка та 3D-сторінки */
   .header-row {
     flex-direction: column;
     align-items: center;
@@ -606,66 +606,62 @@ body[data-theme="dark"] .mood-caption {
     box-sizing: border-box;
   }
 
-  /* Таблиця (робимо горизонтальну прокрутку пальцем) */
+  /* Таблиця */
   .table-container {
     overflow-x: auto;
     width: 100%;
     display: block;
-    -webkit-overflow-scrolling: touch; /* Плавна прокрутка для телефона */
+    -webkit-overflow-scrolling: touch;
     padding-bottom: 10px;
   }
   table {
-    min-width: 500px; /* Таблиця збереже свої розміри, але її можна буде гортати вбік */
+    min-width: 500px;
   }
 
-  /* "Картинки настрою" та "Цікаві факти" */
-  .mood-row,
-  .history-peach-container {
+  /* Картинки настрою */
+  .mood-row {
     display: flex;
-    flex-direction: column; /* Вишиковуємо в стовпчик */
+    flex-direction: column;
     align-items: center;
     gap: 25px;
   }
-
-  /* Налаштування окремих боксів настрою */
   .mood-box {
     width: 100%;
-    max-width: 300px; /* Щоб картинки не розтягувалися на весь екран, а були акуратними */
+    max-width: 300px;
     margin: 0 auto;
   }
-
   .mood-box img {
     width: 100%;
     height: auto;
     border-radius: 15px;
   }
 
-  /* Налаштування карток з фактами */
+  /* цікаві факти про ХА */
+  .history-peach-container {
+    padding: 15px !important;
+  }
+  .history-grid-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin-bottom: 20px !important;
+  }
   .history-fact {
-    width: 90%;
-    max-width: 350px;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
   }
 
-  /* Слайдер з фото (щоб картинка не була сплюснута) */
+  /* Слайдер з фото */
   .slideshow-container {
     padding: 10px;
     width: 90%;
   }
   .slide img {
     width: 100%;
-    height: auto; /* Висота підлаштується автоматично */
-    object-fit: contain; /* Картинка не буде обрізатися чи сплющуватися */
-    border-radius: 8px;
-  }
-
-  /* Фікс фото настрою */
-  .mood-item {
-    width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-  }
-  .mood-item img {
-    width: 100%;
     height: auto;
+    object-fit: contain;
+    border-radius: 8px;
   }
 }

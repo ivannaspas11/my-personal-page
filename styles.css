@@ -1,6 +1,3 @@
-/* =========================================
-   БАЗОВІ НАЛАШТУВАННЯ
-========================================= */
 body {
   margin: 0;
   padding: 0 20px;
@@ -19,9 +16,7 @@ hr {
   margin: 40px 0;
 }
 
-/* =========================================
- РЯДОК 1: ТИТУЛ ТА ТЕМА
-========================================= */
+/* титул і тема */
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -30,14 +25,14 @@ hr {
 }
 
 .header-spacer {
-  width: 150px; /* Для рівноваги */
+  width: 150px;
 }
 
 .main-title {
-  font-weight: 900; /* Жирніший шрифт */
+  font-weight: 900;
   font-size: 2.5rem;
   padding: 15px 30px;
-  background-color: #e6f2ff; /* Ніжний синій фон */
+  background-color: #e6f2ff;
   border: 3px solid #80bfff; /* Рамка */
   border-radius: 15px;
   text-align: center;
@@ -51,32 +46,28 @@ hr {
 
 .soft-select {
   padding: 10px;
-  border-radius: 12px; /* М'якший квадрат */
+  border-radius: 12px;
   border: 2px solid #ccc;
-  font-family: "Georgia", serif; /* Змінений шрифт */
+  font-family: "Georgia", serif;
   font-size: 1rem;
   cursor: pointer;
   background-color: #f9f9f9;
 }
 
-/* =========================================
- РЯДОК 2: ВЛАСНИК
-========================================= */
+/* власниця */
 .owner-subtitle {
   text-align: center;
   margin: 20px auto;
   padding: 15px 25px;
-  background-color: #e0f7fa; /* Голубий фон */
+  background-color: #e0f7fa;
   border-radius: 10px;
-  font-family: "Courier New", Courier, monospace; /* Стилістичне виділення шрифтом */
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.2rem;
   font-weight: bold;
   max-width: 800px;
 }
 
-/* =========================================
- ТАБЛИЦЯ
-========================================= */
+/* таблиця */
 .table-section h2 {
   font-family: "Trebuchet MS", sans-serif;
 }
@@ -84,11 +75,7 @@ hr {
 .table-container {
   max-width: 900px;
   margin: 0 auto;
-  background: linear-gradient(
-    135deg,
-    #fdfbfb 0%,
-    #ebedee 100%
-  ); /* Композиція фону */
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -104,7 +91,7 @@ th,
 td {
   padding: 15px;
   text-align: center;
-  border: 2px solid #bdc3c7; /* Виділені лінії */
+  border: 2px solid #bdc3c7;
 }
 
 th {
@@ -113,16 +100,14 @@ th {
   font-size: 1.1rem;
 }
 
-/* =========================================
- ФІЛЬМИ
-========================================= */
+/* фільми */
 .films-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #e6f7ff; /* Ніжний голубий фон між фільмами */
+  background-color: #e6f7ff;
   padding: 30px;
   border-radius: 15px;
 }
@@ -131,7 +116,7 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid #b3e0ff; /* Ободок для фільмів */
+  border: 3px solid #b3e0ff;
   padding: 15px;
   background: white;
   border-radius: 10px;
@@ -154,9 +139,7 @@ th {
   border-radius: 5px;
 }
 
-/* =========================================
- 3 СЛОВА (Анімація карток)
-========================================= */
+/* 3 слова які описують */
 .centered-title {
   text-align: center;
 }
@@ -185,7 +168,7 @@ th {
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateX(180deg); /* Обертання */
+  transform: rotateX(180deg);
 }
 
 .flip-card-front,
@@ -199,7 +182,7 @@ th {
   justify-content: center;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 15px; /* Заокруглені краї прямокутного обідка */
+  border-radius: 15px;
   background-color: white;
 }
 
@@ -234,9 +217,7 @@ th {
   transform: rotateX(180deg);
 }
 
-/* =========================================
- МІЙ НАСТРІЙ
-========================================= */
+/*мій настрій*/
 .bold-centered-title {
   text-align: center;
   font-weight: 900;
@@ -260,13 +241,13 @@ th {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px; /* Квадратні, але м'які */
+  border-radius: 10px;
 }
 
 .mood-caption {
   margin-top: 15px;
   padding: 10px 20px;
-  font-family: "Comic Sans MS", cursive, sans-serif; /* Красивий виділений шрифт */
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
   border-radius: 8px;
   border: 3px solid;
@@ -287,12 +268,10 @@ th {
   box-shadow: 0 0 10px #9b59b6;
 }
 
-/* =========================================
- ЦИТАТИ
-========================================= */
+/*цитати*/
 .gray-title {
   text-align: center;
-  background-color: #e0e0e0; /* Нейтральний сірий фон */
+  background-color: #e0e0e0;
   padding: 10px 20px;
   border: 2px solid #b0b0b0;
   border-radius: 10px;
@@ -307,27 +286,25 @@ th {
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
-  background-color: #fdfdfd; /* Молочний/білий */
+  background-color: #fdfdfd;
   border: 2px solid #f5f5f5;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 10px #ccc; /* Неоново-білий ефект із сірим */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 10px #ccc;
   font-style: italic;
   font-size: 1.1rem;
   line-height: 1.5;
 }
 
-/* =========================================
- ІСТОРІЯ СЛОБОЖАНЩИНИ
-========================================= */
+/* цікаві факти */
 .orange-translucent-title {
   text-align: center;
-  background-color: rgba(255, 165, 0, 0.4); /* Напівпрозорий помаранчевий */
+  background-color: rgba(255, 165, 0, 0.4);
   padding: 15px;
   border-radius: 10px;
 }
 
 .history-peach-container {
-  background-color: #ffdab9; /* Персиковий фон простору */
+  background-color: #ffdab9;
   padding: 30px;
   border-radius: 15px;
 }
@@ -356,9 +333,7 @@ th {
   line-height: 1.4;
 }
 
-/* =========================================
- МАПИ
-========================================= */
+/* мапа */
 .maps-container {
   display: flex;
   justify-content: center;
@@ -397,9 +372,7 @@ th {
   color: #fff;
 } /* Ожиновий */
 
-/* =========================================
-   СПОГАДИ ТА 3D ПРОЄКТ
-========================================= */
+/* фото+3д проект */
 .turquoise-title {
   text-align: center;
   border: 3px solid #40e0d0; /* Бірюзова рамка */
@@ -413,13 +386,12 @@ th {
   text-align: center;
 }
 
-/* ГОЛУБИЙ ФОН І ПРОСТІР НАВКОЛО СЛАЙДЕРА */
 .slideshow-container {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #e3f2fd; /* Голубий фон */
-  padding: 20px 60px; /* Відступ зліва і справа для стрілок */
+  background-color: #e3f2fd;
+  padding: 20px 60px;
   border-radius: 15px;
 }
 
@@ -427,7 +399,7 @@ th {
   display: none;
 }
 
-/* ОДНАКОВИЙ РОЗМІР ФОТО */
+/*однаковий розмір фото */
 .slide img {
   width: 100%;
   height: 500px; /* Усі фото будуть мати цю висоту */
@@ -443,7 +415,7 @@ th {
   color: #333;
 }
 
-/* ФІКСОВАНІ СТРІЛКИ */
+/* фіксовані стрілки */
 .prev,
 .next {
   cursor: pointer;
@@ -475,7 +447,7 @@ th {
 }
 
 .blue-button-container {
-  background-color: #3498db; /* Синій фон під кнопкою */
+  background-color: #3498db;
   padding: 40px;
   text-align: center;
   border-radius: 15px;
@@ -498,18 +470,14 @@ th {
   transform: scale(1.1); /* Збільшення при наведенні */
 }
 
-/* =========================================
-   ТЕМНА ТЕМА (DARK THEME) - ФІНАЛЬНІ ФІКСИ ЧИТАБЕЛЬНОСТІ ТА ШРИФТІВ
-========================================= */
+/* темна тема */
 body[data-theme="dark"] {
   background-color: #1a1a2e;
   color: #e6e6e6;
-  /* 1. ФІКС ШРИФТІВ: Змінюємо базовий шрифт на стильний класичний */
   font-family: "Georgia", "Times New Roman", serif;
   letter-spacing: 0.5px;
 }
 
-/* Змінюємо шрифт заголовків у темній темі на інший (машинописний стиль) */
 body[data-theme="dark"] h1,
 body[data-theme="dark"] h2,
 body[data-theme="dark"] h3,
@@ -525,19 +493,18 @@ body[data-theme="dark"] .owner-subtitle {
   color: #f1c40f;
 }
 
-/* 2. ФІКС ТАБЛИЦІ: Робимо темний фон комірок, щоб світлий текст читався */
 body[data-theme="dark"] table {
   background-color: #1a1a2e;
 }
 body[data-theme="dark"] th {
   background-color: #f1c40f;
-  color: #1a1a2e; /* Темний текст на жовтій шапці */
+  color: #1a1a2e;
   border-color: #f1c40f;
 }
 body[data-theme="dark"] td {
   border-color: #535c68;
-  background-color: #16213e; /* Темно-синій фон для рядків */
-  color: #e6e6e6; /* Світлий текст */
+  background-color: #16213e;
+  color: #e6e6e6;
 }
 
 /* Фільми */
@@ -580,12 +547,12 @@ body[data-theme="dark"] .orange-translucent-title {
   color: #f1c40f;
 }
 
-/* 3. ФІКС ПІДПИСІВ МАП: Правильний контраст тексту */
+/* мапа */
 body[data-theme="dark"] .pink-bg {
-  color: #1a1a2e; /* Темний текст на ніжному рожевому фоні */
+  color: #1a1a2e;
 }
 body[data-theme="dark"] .blackberry-bg {
-  color: #ffffff; /* Білий текст на темному ожиновому фоні */
+  color: #ffffff;
 }
 
 body[data-theme="dark"] .blue-button-container {
@@ -608,14 +575,97 @@ body[data-theme="dark"] .slide-caption {
   color: #f1c40f;
 }
 
-/* 4. ФІКС КАРТОК (3 слова) ТА НАСТРОЮ: Прибираємо білий фон, щоб текст не зливався */
 body[data-theme="dark"] .flip-card-front,
 body[data-theme="dark"] .flip-card-back {
-  background-color: #16213e; /* Робимо фон карток темним */
+  background-color: #16213e;
   color: #e6e6e6;
 }
 
 body[data-theme="dark"] .mood-caption {
-  background-color: #16213e; /* Робимо фон підписів настрою темним */
+  background-color: #16213e;
   color: #e6e6e6;
+}
+
+/* адаптивність для моб.пристроїв */
+@media screen and (max-width: 768px) {
+  /*  Шапка та 3D-сторінки (щоб заголовок і перемикач не злипалися) */
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  .header-spacer {
+    display: none;
+  }
+  .main-title {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Таблиця (робимо горизонтальну прокрутку пальцем) */
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+    display: block;
+    -webkit-overflow-scrolling: touch; /* Плавна прокрутка для телефона */
+    padding-bottom: 10px;
+  }
+  table {
+    min-width: 500px; /* Таблиця збереже свої розміри, але її можна буде гортати вбік */
+  }
+
+  /* "Картинки настрою" та "Цікаві факти" */
+  .mood-row,
+  .history-peach-container {
+    display: flex;
+    flex-direction: column; /* Вишиковуємо в стовпчик */
+    align-items: center;
+    gap: 25px;
+  }
+
+  /* Налаштування окремих боксів настрою */
+  .mood-box {
+    width: 100%;
+    max-width: 300px; /* Щоб картинки не розтягувалися на весь екран, а були акуратними */
+    margin: 0 auto;
+  }
+
+  .mood-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+
+  /* Налаштування карток з фактами */
+  .history-fact {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* Слайдер з фото (щоб картинка не була сплюснута) */
+  .slideshow-container {
+    padding: 10px;
+    width: 90%;
+  }
+  .slide img {
+    width: 100%;
+    height: auto; /* Висота підлаштується автоматично */
+    object-fit: contain; /* Картинка не буде обрізатися чи сплющуватися */
+    border-radius: 8px;
+  }
+
+  /* Фікс фото настрою */
+  .mood-item {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .mood-item img {
+    width: 100%;
+    height: auto;
+  }
 }

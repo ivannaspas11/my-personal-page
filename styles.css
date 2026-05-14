@@ -370,12 +370,12 @@ th {
 .blackberry-bg {
   background-color: #4b0082;
   color: #fff;
-} /* Ожиновий */
+}
 
 /* фото+3д проект */
 .turquoise-title {
   text-align: center;
-  border: 3px solid #40e0d0; /* Бірюзова рамка */
+  border: 3px solid #40e0d0;
   padding: 10px;
   border-radius: 10px;
   display: inline-block;

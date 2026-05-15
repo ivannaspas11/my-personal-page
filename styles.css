@@ -84,7 +84,7 @@ hr {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Красивіший шрифт */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* шрифт */
 }
 
 th,
@@ -421,7 +421,7 @@ th {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Рівняємо чітко по центру */
+  transform: translateY(-50%);
   width: auto;
   padding: 16px;
   color: white;
